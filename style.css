@@ -1,0 +1,97 @@
+body {
+    box-sizing: border-box; 
+    background-color: darkslateblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex; 
+    height: 50px;
+    padding: 20px 155px;   
+}
+
+.name {
+   color: #f9faf8;
+   font-weight: bolder;
+   width: 170px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    transition-duration: 0.4s;
+}
+
+h1 {
+    color: #f9faf8;
+    width: 400px;
+    text-align: left;
+    margin: 0;
+}
+
+p {
+    color: #b1b1b1;
+    text-align: left;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 35px 0 35px 0;
+}
+
+.header .container { 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+    gap: 20px;
+    flex-wrap: row wrap;
+}
+
+.container img {
+    max-width: 450px;
+    max-height: 300px;
+    border: 5px solid rgb(39, 0, 51);
+    border-radius: 6px;
+}  
+
+
+.content {
+    max-width: 500px;
+}
+
+
+button {
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: darkslateblue;
+    border: 2px solid rgb(39, 0, 51);
+    padding: 5px 50px;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    color: rgb(39, 0, 51);
+   cursor: pointer;
+}
+
+button:hover {
+     background-color: rgb(39, 0, 51);
+     cursor: pointer;
+}
+
+
+.links {
+    display: flex;
+    list-style: none;
+    margin: ato;
+    gap: 20px;
+}
