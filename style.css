@@ -16,14 +16,16 @@ body {
 
 .navbar {
     display: flex; 
-    height: 50px;
-    padding: 20px 155px;   
+    flex-shrink: 0;
+    max-width: 100%;
+    margin: 20px 155px;   
 }
 
 .name {
    color: #f9faf8;
    font-weight: bolder;
    width: 170px;
+   display: flex;
 }
 
 a {
@@ -38,14 +40,17 @@ h1 {
     width: 400px;
     text-align: left;
     margin: 0;
+    margin-bottom: 30px;
 }
 
-p {
+.header p {
     color: #b1b1b1;
     text-align: left;
     font-weight: bold;
     line-height: 25px;
-    padding: 35px 0 35px 0;
+    padding: 30px 0 35px 0;
+    margin-bottom: 20px;
+    max-width: 500px;
 }
 
 .header .container { 
@@ -57,17 +62,140 @@ p {
 }
 
 .container img {
-    max-width: 450px;
-    max-height: 300px;
+    max-width: 100%;
+    height: auto;
     border: 5px solid rgb(39, 0, 51);
     border-radius: 6px;
+    display: flex;
+    flex-shrink: 0;
 }  
 
-
-.content {
-    max-width: 500px;
+.boxes img {
+    max-width: 200px;
+    border: 5px solid rgb(39, 0, 51);
+    border-radius: 6px;
+    height: 140px;
+    margin: 30px;
 }
 
+.header .content {
+    max-width: 100%;
+}
+
+.boxes {
+    background-color: #ffffff;
+    height: auto;
+}
+
+.boxes .content {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.info {
+    color: darkslateblue;
+    text-align: center;
+    margin: 0px;
+    padding: 30px 0 50px 0;
+}
+
+
+.text {
+    display: flex;
+    color: #414141;
+    font-style: italic;
+    flex-wrap: wrap;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.quote {
+    display: flex;
+    background-color: #e5e7eb;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quotetext {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    font-size: larger;
+    line-height: 40px;
+    font-style: italic;
+    margin: 0 100px;
+}
+
+.author {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin: 30px 100px 0 0px;
+    align-self: end;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    background-color: rgb(39, 0, 51);
+    border-radius: 6px;
+    width: 900px;
+    height: 200px;
+}
+
+.psst {
+    display: flex;
+    color: #ffffff;
+    font-size: larger;
+    margin: 70px 0 0 100px;
+    justify-self: center;
+    width: 300px;
+}
+
+.profile {
+    display: flex;
+    color: #fff;
+    justify-self: center;
+    margin: 10px 0 0 100px;
+}
+
+.footer {
+    display: flex;
+    color: #fff;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    align-self: flex-end;
+    margin: 0 100px 70px 60px;
+}
+
+.banner button {
+    background-color: rgb(39, 0, 51);
+    border: 2px solid darkslateblue;
+}
+
+.banner button:hover {
+    background-color: darkslateblue;
+}
 
 button {
     color: #ffffff;
@@ -80,7 +208,7 @@ button {
 
 a:hover {
     color: rgb(39, 0, 51);
-   cursor: pointer;
+    cursor: pointer;
 }
 
 button:hover {
@@ -91,7 +219,7 @@ button:hover {
 
 .links {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    margin: ato;
-    gap: 20px;
+    gap: 30px;
 }
